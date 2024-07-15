@@ -1,4 +1,4 @@
-# [REPOSITORY NAME]
+# Valid8R
 
 [ADD BUILD TILE]
 [![The Standard](https://img.shields.io/github/v/release/hassanhabib/The-Standard?filter=v2.10.2&style=default&label=Standard%20Version&color=2ea44f)](https://github.com/hassanhabib/The-Standard)
@@ -7,7 +7,7 @@
 
 ## Introduction
 
-[Add Introduction Here]
+Valid8R is a Standard Compliant validation library that offers a validation engine and various other validation extensions to help with unit test assertions
 
 ## Standard-Compliance
 This library was built according to The Standard. The library follows engineering principles, patterns and tooling as recommended by [The Standard](https://github.com/hassanhabib/The-Standard).
@@ -24,26 +24,3 @@ We are committed to writing ethical and responsible software, and will always st
 We believe that these beliefs will help to ensure that our software(s) are safe and secure and that it will never be used to harm or collect personal data for malicious purposes.
  
 The Standard Community as a promise to you is in upholding these values.
-
-## Contact Information
-
-If you have any suggestions, comments or questions, please feel free to contact me on:
-
->[Twitter](https://twitter.com/hassanrezkhabib)
->
->[LinkedIn](https://www.linkedin.com/in/hassanrezkhabib/)
->
->[E-Mail](mailto:hassanhabib@live.com)
-
-### Past Sessions
-
->[YouTube Playlist Here]
-
-
-### Important Notice and Acknowledgements
-A special thanks to all the community members, and the following dedicated engineers for their hard work and dedication to this project.
->Mr. Hassan Habib
->
->Mr. Christo du Toit
->
->Mr. Gregory Hayes
