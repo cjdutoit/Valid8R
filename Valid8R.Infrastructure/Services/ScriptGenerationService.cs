@@ -59,7 +59,7 @@ namespace Valid8R.Infrastructure.Services
 
                                      With = new TargetDotNetVersionV3
                                      {
-                                        DotNetVersion = "8.0.6"
+                                        DotNetVersion = "8.0.303"
                                      }
                                 },
 
