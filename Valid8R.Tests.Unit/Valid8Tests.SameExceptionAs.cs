@@ -14,8 +14,9 @@ namespace Valid8R.Tests.Unit
         public void SameExceptionAsMatchingExceptionsShouldReturnTrue()
         {
             // Arrange
-            var expectedException = new InvalidOperationException("Test message");
-            var actualException = new InvalidOperationException("Test message");
+            string randomMessage = GetRandomString();
+            var expectedException = new InvalidOperationException(message: randomMessage);
+            var actualException = new InvalidOperationException(message: randomMessage);
             string randomReference = GetRandomString();
 
             // Act
@@ -33,6 +34,33 @@ namespace Valid8R.Tests.Unit
                 helper => helper.WriteLine(It.IsAny<string>()),
                 Times.Never,
                 "Expected no output when exceptions match"
+            );
+        }
+
+        [Fact]
+        public void SameExceptionAsNonMatchingExceptionsShouldReturnFalse()
+        {
+            // Arrange
+            string expectedMessage = GetRandomString();
+            string actualMessage = GetRandomString();
+            var expectedException = new InvalidOperationException(message: expectedMessage);
+            var actualException = new InvalidOperationException(message: actualMessage);
+            string randomReference = GetRandomString();
+
+            // Act
+            var expression = Valid8.SameExceptionAs(
+                expectedException,
+                testOutputHelper: testOutputHelperMock.Object,
+                reference: randomReference);
+
+            var result = expression.Compile().Invoke(actualException);
+
+            // Assert
+            Assert.False(result);
+            testOutputHelperMock.Verify(
+                helper => helper.WriteLine(It.IsAny<string>()),
+                Times.Once,
+                "Expected a message to be written to the output when exceptions do not match."
             );
         }
     }
