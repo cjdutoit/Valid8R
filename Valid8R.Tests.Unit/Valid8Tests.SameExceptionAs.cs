@@ -75,8 +75,6 @@ namespace Valid8R.Tests.Unit
                 Model = "Camry",
                 Year = 2020,
                 Color = "Blue",
-                Engine = "V6",
-                Price = 25000.0
             };
 
             object expectedObject = ((object)randomObject).DeepClone();
@@ -97,6 +95,47 @@ namespace Valid8R.Tests.Unit
                 helper => helper.WriteLine(It.IsAny<string>()),
                 Times.Never,
                 "Expected no output when exceptions match"
+            );
+        }
+
+        [Fact]
+        public void SameObjectAsNonMatchingExceptionsShouldReturnFalse()
+        {
+            // Arrange
+            dynamic expectedDynamicObject = new
+            {
+                Make = "Toyota",
+                Model = "Camry",
+                Year = 2020,
+                Color = "Blue",
+            };
+
+            dynamic actualDynamicObject = new
+            {
+                Make = "Toyota",
+                Model = "Hilux",
+                Year = 2024,
+                Color = "Red",
+            };
+
+            object expectedObject = ((object)expectedDynamicObject).DeepClone();
+            object actualObject = ((object)actualDynamicObject).DeepClone();
+            string randomReference = GetRandomString();
+
+            // Act
+            var expression = Valid8.SameObjectAs<object>(
+                expectedObject,
+                testOutputHelper: testOutputHelperMock.Object,
+                reference: randomReference);
+
+            var result = expression.Compile().Invoke(actualObject);
+
+            // Assert
+            Assert.False(result);
+            testOutputHelperMock.Verify(
+                helper => helper.WriteLine(It.IsAny<string>()),
+                Times.Once,
+                "Expected a message to be written to the output when exceptions do not match."
             );
         }
     }
