@@ -6,23 +6,24 @@
 		<Company>Christo du Toit</Company>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<Description>Valid8 is an extension library that provides functionality to assert and verify test data.</Description>
+		<Description>Valid8R is an extension library that provides functionality to assert and verify test data.</Description>
 		<Copyright>Copyright (c) Christo du Toit</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<PackageIconUrl />
-		<Version>2.6</Version>
-		<AssemblyVersion>2.6.0.0</AssemblyVersion>
-		<FileVersion>2.6.0.0</FileVersion>
+		<Version>0.2.0.0</Version>
+		<AssemblyVersion>0.2.0.0</AssemblyVersion>
+		<FileVersion>0.2.0.0</FileVersion>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/cjdutoit/Valid8R</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/cjdutoit/Valid8R</RepositoryUrl>
 		<PackageIcon>Valid8R.png</PackageIcon>
 		<PackageLicenseFile>License.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>Github</RepositoryType>
 		<PackageTags>Validations .NET</PackageTags>
-		<PackageReleaseNotes>Alpha release of Valid8</PackageReleaseNotes>
+		<PackageReleaseNotes>Alpha release of Valid8R</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -32,6 +33,10 @@
 		</None>
 		<None Include="Resources\Valid8R.png">
 			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>true</Pack>
 			<PackagePath></PackagePath>
 		</None>
 	</ItemGroup>
@@ -45,6 +50,7 @@
 	<ItemGroup>
 	  <PackageReference Include="CompareNETObjects" Version="4.83.0" />
 	  <PackageReference Include="FluentAssertions" Version="6.12.0" />
+	  <PackageReference Include="Xeption" Version="2.7.0" />
 	  <PackageReference Include="xunit.abstractions" Version="2.0.3" />
 	</ItemGroup>
 
