@@ -6,7 +6,7 @@
 		<Company>Christo du Toit</Company>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<Description>Valid8 is an extension library that provides functionality to assert and verify test data.</Description>
+		<Description>Valid8R is an extension library that provides functionality to assert and verify test data.</Description>
 		<Copyright>Copyright (c) Christo du Toit</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -23,7 +23,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>Github</RepositoryType>
 		<PackageTags>Validations .NET</PackageTags>
-		<PackageReleaseNotes>Alpha release of Valid8</PackageReleaseNotes>
+		<PackageReleaseNotes>Alpha release of Valid8R</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
