@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Valid8R is a Standard Compliant validation library that offers a validation engine and various other validation extensions to help with unit test assertions
+Valid8 is an extension library that provides functionality to assert and verify test data.
 
 ## Standard-Compliance
 This library was built according to The Standard. The library follows engineering principles, patterns and tooling as recommended by [The Standard](https://github.com/hassanhabib/The-Standard).
