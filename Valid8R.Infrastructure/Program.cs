@@ -1,13 +1,13 @@
-﻿// ------------------------------------------------------------
-// Copyright (c)  The Standard Community - All rights reserved.
-// ------------------------------------------------------------
+﻿// -----------------------------------------------------
+// Copyright (c)  Christo du Toit - All rights reserved.
+// -----------------------------------------------------
 
 
 // ------------------------------------------------------------
 // Copyright (c)  The Standard Community - All rights reserved.
 // ------------------------------------------------------------
 
-using Valid8.Infrastructure.Services;
+using Valid8R.Infrastructure.Services;
 
 namespace Valid8R.Infrastructure
 {
